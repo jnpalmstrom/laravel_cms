@@ -3,13 +3,29 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
-    //
+    use SoftDeletes;
+
     /* How to change table name & default primary key
+     *
      * protected $table = 'posts';
-    protected $primaryKey = 'post_id';
+     * protected $primaryKey = 'post_id';
     */
+
+    protected $date = [
+        'deleted_at'
+    ];
+
+    protected $fillable = [
+        'title',
+        'content'
+    ];
+
+    public function user() {
+        return $this->belongsTo('App\User');
+    }
 
 }

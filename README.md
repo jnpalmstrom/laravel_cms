@@ -1,6 +1,13 @@
-<<<<<<< HEAD
+# App with Laravel 7
+First Project using Laravel 7 with Blade, Eloquent (MariaDB), Redux, and Vue.js  
+### Run Development server 
+```php artisan serve```
+### Deleting a migrations table
+1. Run ```php artisan migrate reset```
+2. Now you can delete the desired migration php file
+### Create a migration
+```php artisan make:model -m```
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
@@ -79,6 +86,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
-# laravel_cms
-First Project using Laravel 7 with Blade, Eloquent (MariaDB), Redux, and Vue.js  
->>>>>>> 9e0e7e1695514ae6ef167cc22945b820b4e164f2

@@ -36,4 +36,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Goes to post table and finds user_id column by default **if column is different name use ('App\Post', 'column_name')
+    public function post() {
+        return $this->hasOne('App\Post');
+    }
+
+    public function posts() {
+        return $this->hasMany('App\Post');
+    }
+
+    public function roles() {
+        return $this->belongsToMany('App\Role');
+    }
+
 }
